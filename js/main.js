@@ -14,13 +14,19 @@ elForm.addEventListener("submit", function(evt){
     var VCar=70;
     var VAirplane=800;
 
+    function hourToMinute(minute){
+        var hour=Math.floor(fuzicInput/minute);
+        var minute=Math.floor(((fuzicInput/minute)-hour)*60);
+        return hour +" soat " +minute+" minute"
+    }
+
     if(isNaN(fuzicInput)){
         elResult.textContent="Please, enter number"
     }
     else if(fuzicInput){
-        elResult1.textContent=fuzicInput/VHuman.toFixed(3);
-        elResult2.textContent=fuzicInput/VBysicle.toFixed(3);
-        elResult3.textContent=fuzicInput/VCar.toFixed(3);
-        elResult4.textContent=fuzicInput/VAirplane.toFixed(3);
+        elResult1.textContent=hourToMinute(VHuman);
+        elResult2.textContent=hourToMinute(VBysicle);;
+        elResult3.textContent=hourToMinute(VCar);;
+        elResult4.textContent=hourToMinute(VAirplane);;
     }
 });
