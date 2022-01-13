@@ -1,0 +1,41 @@
+h1 {
+  text-align: center;
+}
+.form__text {
+  font-size: 20px;
+}
+.fuzic__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fuzic__input {
+  height: 25px;
+  margin: 0 100px 0 10px;
+}
+button {
+  width: 150px;
+  height: 25px;
+  font-size: 15px;
+  border: 0;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #4ce;
+}
+.card__list {
+  margin: 50px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+.card__item {
+  padding: 30px 30px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+.card__item + .card__item {
+  margin-left: 150px;
+}
+.card__text {
+  text-align: center;
+}
